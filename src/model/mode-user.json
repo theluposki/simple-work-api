@@ -1,0 +1,36 @@
+{
+	"_id": "62945e6534d30cc7b818184c",
+	"name": "Lucas",
+	"lastName": "Lucas Pereira de Oliveira",
+	"nickName": "Lupoanon",
+	"email": "lupoanon@mail.com",
+	"rules": [
+		"user"
+	],
+  "contacts": [
+    { 
+      "nickName":"eva",
+      "urlProfileImg":"https://i.pravatar.cc/150?img=19",
+      "conversation":[
+        {
+          "_id":"62945e6534d30cc7b818184c",
+          "message":"Oi Tudo bem?",
+          "author":"Lucas",
+          "createAt":"2022-05-30T06:04:21.931Z"
+        },
+        {
+          "_id":"62945e6534d30cc7b818184c",
+          "message":"Tudo sim",
+          "author":"eva",
+          "createAt":"2022-05-30T06:04:21.931Z"
+        },
+        {
+          "_id":"62945e6534d30cc7b818184c",
+          "message":"e vc?",
+          "author":"eva",
+          "createAt":"2022-05-30T06:04:21.931Z"
+        }
+      ]
+    }
+  ]
+}

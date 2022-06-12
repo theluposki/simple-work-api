@@ -1,0 +1,5 @@
+# Database
+MONGO_URL_CONECTION=mongodb://localhost:27017/myapp
+# API
+PORT=3000
+HOST=localhost
