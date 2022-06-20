@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import express from "express";
 import "express-async-errors"
 import compression from "compression"
@@ -8,6 +9,9 @@ import UserRouter from "./routes/UserRouter.js";
 
 import forgotPasswordRouter from "./routes/ForgotPasswordRouter.js";
 import resetPasswordRouter from "./routes/ResetPasswordRouter.js";
+
+import ContactRouter from "./routes/ContactsRouter.js"
+import ConversationRouter from "./routes/ConversationRouter.js"
 
 const app = express();
 
@@ -20,6 +24,8 @@ app.use("/", serverRouter);
 app.use("/users", UserRouter);
 app.use("/forgot_password", forgotPasswordRouter);
 app.use("/reset_password", resetPasswordRouter);
+app.use("/contact", ContactRouter);
+app.use("/conversation", ConversationRouter);
 
 app.use((error, req,res,next) => {
   console.log(error)

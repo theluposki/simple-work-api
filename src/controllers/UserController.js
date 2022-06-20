@@ -61,13 +61,14 @@ export const UserController = {
   },
   async updateOnlyOne(req, res) {
     const id = req.params.id;
-    const { name, lastName } = req.body;
+    const { name, lastName, urlProfileImg } = req.body;
 
     try {
       res.status(200).json(
         await UserRepository.updateOnlyOne(id, {
           name,
           lastName,
+          urlProfileImg
         })
       );
     } catch (error) {
